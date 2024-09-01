@@ -6,7 +6,7 @@
     "start": "ts-node ton.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rotem",
   "license": "ISC",
   "description": "",
   "dependencies": {
