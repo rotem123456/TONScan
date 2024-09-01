@@ -48,6 +48,7 @@ const GetTx = async (hashs: string[]): Promise<any> => {
 				hex: hex,
 			};
 			obj.push(response_obj);
+			//If Batch uncomment the bellow message and comment the obove message
 			// in_msg_arr.push(response_obj.in_msg);
 		} catch (error) {
 			console.error("Error fetching transaction:", error);
@@ -55,6 +56,7 @@ const GetTx = async (hashs: string[]): Promise<any> => {
 		}
 	}
 	return obj;
+	//return in_msg_arr
 };
 
 while (tx_hash != "END") {
@@ -64,6 +66,7 @@ while (tx_hash != "END") {
 
 (async () => {
 	try {
+		//If batch instead of the TxHashBuffer add in_msg_arr
 		const result = await GetTx(TxHashBuffer);
 		console.log(result);
 	} catch (error) {
